@@ -43,5 +43,15 @@
         android:layout_below="@+id/logoText"
         android:layout_centerHorizontal="true"/>
 
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:id="@+id/randrombutton"
+        android:layout_above="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"/>
+
 
 </RelativeLayout>

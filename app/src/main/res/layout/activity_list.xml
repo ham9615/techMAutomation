@@ -16,8 +16,9 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true">
+                android:layout_height="500dp"
+                android:id="@+id/scroll"
+                android:fillViewport="false">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -149,4 +150,12 @@
         android:layout_alignStart="@+id/button2"/>
 </RelativeLayout>
     </ScrollView>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/speak"
+        android:id="@+id/speak"
+        />
 </RelativeLayout>

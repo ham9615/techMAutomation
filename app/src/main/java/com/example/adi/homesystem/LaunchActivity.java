@@ -14,6 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
@@ -43,6 +46,11 @@ public class LaunchActivity extends AppCompatActivity {
         connectButton =(Button)findViewById(R.id.connect);
 
 
+
+
+
+
+
         if(bluetoothAdapter==null){
             Toast.makeText(getApplicationContext(),"This device is not Bluetooth Supported",Toast.LENGTH_LONG).show();
         }
@@ -70,7 +78,7 @@ public class LaunchActivity extends AppCompatActivity {
 
 
                           //  list.add(bt.getName() + " " + bt.getAddress());
-                           if(bt.getName().equals("HAMSTER")){
+                           if(bt.getName().equals("HC-05")){
                                     String address = bt.getAddress();
                                 Intent nextScreenIntent = new Intent(LaunchActivity.this,listActivity.class);
                                 nextScreenIntent.putExtra(EXTRA_ADDRESS,address);
